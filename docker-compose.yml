@@ -1,0 +1,13 @@
+version: '3.1'
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - 5432:5432

@@ -1,0 +1,10 @@
+name: cargo-packages
+version: 0.1.0
+
+dependencies:
+  marten:
+    github: martenframework/marten
+  pg:
+    github: will/crystal-pg
+  serializer:
+    github: imdrasil/serializer
